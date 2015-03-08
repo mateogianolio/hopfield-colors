@@ -15,9 +15,27 @@ Edit ```colors.js``` if you want to use different colors. The average error of t
 ## Observations
 
 * When trained to recognize red, green, blue and black (```#ff0000```, ```#00ff00```, ```#0000ff``` and ```#000000``` respectively), cyan, yellow and magenta emerge as solid states.
-* Applying a network trained to recognize black and white (```#ffffff``` and ```#000000``` respectively) on a circular color spectrum produces fractal-like patterns.
+* Applying a network trained to recognize black and white (```#000000``` and ```#ffffff``` respectively) on a circular color spectrum produces fractal-like patterns.
 
 ## Examples
+
+### Black and white
+
+The following images are inputs and outputs of a network which recognizes black and white (```#000000``` and ```#ffffff``` respectively) colors.
+
+Original image | Processed image
+:-------------:|:--------------:
+![Original circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum.png) | ![Processed circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-g.png)
+
+Original image | Processed image
+:-------------:|:--------------:
+![Original linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum-linear.png) | ![Processed linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-linear-g.png)
+
+Original image | Processed image
+:-------------:|:--------------:
+![Original nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/nature.png) | ![Processed nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/nature-g.png)
+
+### Green
 
 The following images are inputs and outputs of a network which recognizes green (```#ff0000```) color.
 
@@ -33,7 +51,9 @@ Original image | Processed image
 :-------------:|:--------------:
 ![Original nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/nature.png) | ![Processed nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/nature-g.png)
 
-The following images are inputs and outputs of a network which recognizes red, green and blue (```#ff0000```, ```#00ff00``` and ```#0000ff```) colors.
+## Red, green and blue
+
+The following images are inputs and outputs of a network which recognizes red, green and blue (```#ff0000```, ```#00ff00``` and ```#0000ff``` respectively) colors.
 
 Original image | Processed image
 :-------------:|:--------------:
