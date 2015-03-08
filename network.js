@@ -24,7 +24,7 @@
         });
 
       return trainer.train(set, {
-        iterations: 500000,
+        iterations: 50000,
         error: .00005,
         rate: 1
       });

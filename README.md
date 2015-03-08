@@ -10,11 +10,12 @@ Clone this repository and make sure the ```output``` folder exists before runnin
 $ node main.js
 ```
 
-Edit ```colors.js``` if you want to use different colors. If a pixel in any of the images is black (```#000000```), it is currently automatically made transparent (for clarity purposes). The average error of the network output is subtracted from the transparency of each pixel.
+Edit ```colors.js``` if you want to use different colors. The average error of the network output is subtracted from the transparency of each pixel.
 
-## Applications
+## Observations
 
-None that I know of, just experimenting :)
+* When trained to recognize red, green, blue and black (```#ff0000```, ```#00ff00```, ```#0000ff``` and ```#000000``` respectively), cyan, yellow and magenta emerge as solid states.
+* Applying a network trained to recognize black and white (```#ffffff``` and ```#000000``` respectively) on a circular color spectrum produces fractal-like patterns.
 
 ## Examples
 

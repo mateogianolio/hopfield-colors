@@ -82,8 +82,6 @@
               this.data[index + 3] = 255 * (1 - output.error);
               
               // if black, set transparent
-              if(destination.reduce(function(previous, current) { return previous + current; }) === 0)
-                this.data[index + 3] = 0;
             }
           }
 
