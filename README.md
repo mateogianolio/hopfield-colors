@@ -1,16 +1,16 @@
 # Hopfield color filter
 
-Trains a [Hopfield](http://en.wikipedia.org/wiki/Hopfield_network) recurrent neural network to recognize colors and subsequently extracts them from all images in the ```input``` folder. Output is saved to the ```output``` folder.
+Trains a [Hopfield](http://en.wikipedia.org/wiki/Hopfield_network) recurrent neural network to recognize colors and subsequently extracts them from all PNG images in the ```input``` folder. Output is saved to the ```output``` folder.
 
 ## Usage
 
-Clone this repository and run
+Clone this repository and make sure the ```output``` folder exists before running
 
 ```bash
 $ node main.js
 ```
 
-Edit ```colors.js``` if you want to use different colors. If a pixel in any of the images is black (```#000000```), it is currently automatically made transparent (for clarity purposes).
+Edit ```colors.js``` if you want to use different colors. If a pixel in any of the images is black (```#000000```), it is currently automatically made transparent (for clarity purposes). The average error of the network output is subtracted from the transparency of each pixel.
 
 ## Examples
 
