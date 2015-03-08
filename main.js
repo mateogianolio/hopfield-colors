@@ -1,15 +1,26 @@
 (function(log) {
   var fs = require('fs'),
       png = require('pngjs').PNG,
-      colors = require(__dirname + '/colors.js'),
-      network = require(__dirname + '/network.js');
+      network = require(__dirname + '/network.js'),
+      tools = require(__dirname + '/tools.js');
+  
+  var colors = [
+    '111111111111111111111111', // White
+    '000000000000000000000000' // Black
+  ]
+  
+  colors = colors
+    // e.g. '1111' => [1, 1, 1, 1]
+    .map(function(color) {
+      return color.split('').map(Number);
+    });
   
   // 24-bit hopfield network
   var hopfield = new network.hopfield(24);
   
   log('learning ...');
   
-  hopfield.learn(colors.set);
+  hopfield.learn(colors);
   
   log('done');
   log();
@@ -18,12 +29,10 @@
     var input,
         output,
         index,
-        x, y,
-        j;
+        x, y;
 
     var source = [],
-        destination = [],
-        byte = 8;
+        destination = [];
 
     files.forEach(function(file, i) {
       // ignore dotfiles and only accept png
@@ -53,35 +62,14 @@
                 this.data[index + 2]
               ];
 
-              input = source
-                // convert RGB components to 8-bit
-                .map(function(component) {
-                  return ('00000000' + component.toString(2)).substr(-byte).split('').map(Number);
-                })
-                // concatenate to 24-bit
-                .reduce(function(previous, current) {
-                  return previous.concat(current);
-                });
-
-              // feed network
+              input = tools.toBinary(source);
               output = hopfield.feed(input);
-              
-              destination = [];
-              
-              // convert 24-bit to 8-bit
-              while(output.pattern.length > 0)
-                destination.push(output.pattern.splice(0, byte));
-
-              // convert 8-bit to RGB components
-              for(j in destination)
-                destination[j] = parseInt(destination[j].join(''), 2);
+              destination = tools.toRGB(output.pattern);
               
               this.data[index] = destination[0];
               this.data[index + 1] = destination[1];
               this.data[index + 2] = destination[2];
-              this.data[index + 3] = 255 * (1 - output.error);
-              
-              // if black, set transparent
+              this.data[index + 3] = Math.round(255 * (1 - output.error));
             }
           }
 

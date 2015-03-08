@@ -10,7 +10,7 @@ Clone this repository and make sure the ```output``` folder exists before runnin
 $ node main.js
 ```
 
-Edit ```colors.js``` if you want to use different colors. The average error of the network output is subtracted from the transparency of each pixel.
+Edit the beginning of ```main.js``` if you want to use different colors. The average error of the network output is subtracted from the transparency of each pixel.
 
 ## Observations
 
