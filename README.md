@@ -23,15 +23,15 @@ Edit ```colors.js``` if you want to use different colors. The average error of t
 
 The following images are inputs and outputs of a network which recognizes black and white (```#000000``` and ```#ffffff``` respectively) colors.
 
-Original image | Processed image
+Input | Output
 :-------------:|:--------------:
 ![Original circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum.png) | ![Processed circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-bw.png)
 
-Original image | Processed image
+Input | Output
 :-------------:|:--------------:
 ![Original linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum-linear.png) | ![Processed linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-linear-bw.png)
 
-Original image | Processed image
+Input | Output
 :-------------:|:--------------:
 ![Original nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/nature.png) | ![Processed nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/nature-bw.png)
 
@@ -39,15 +39,15 @@ Original image | Processed image
 
 The following images are inputs and outputs of a network which recognizes green and black (```#ff0000``` and ```#000000``` respectively) color.
 
-Original image | Processed image
+Input | Output
 :-------------:|:--------------:
 ![Original circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum.png) | ![Processed circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-g.png)
 
-Original image | Processed image
+Input | Output
 :-------------:|:--------------:
 ![Original linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum-linear.png) | ![Processed linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-linear-g.png)
 
-Original image | Processed image
+Input | Output
 :-------------:|:--------------:
 ![Original nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/nature.png) | ![Processed nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/nature-g.png)
 
@@ -55,15 +55,15 @@ Original image | Processed image
 
 The following images are inputs and outputs of a network which recognizes red, green, blue and black (```#ff0000```, ```#00ff00```, ```#0000ff``` and ```#000000``` respectively) colors.
 
-Original image | Processed image
+Input | Output
 :-------------:|:--------------:
 ![Original circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum.png) | ![Processed circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-rgb.png)
 
-Original image | Processed image
+Input | Output
 :-------------:|:--------------:
 ![Original linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum-linear.png) | ![Processed linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-linear-rgb.png)
 
-Original image | Processed image
+Input | Output
 :-------------:|:--------------:
 ![Original nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/nature.png) | ![Processed nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/nature-rgb.png)
 
