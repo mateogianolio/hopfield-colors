@@ -12,6 +12,10 @@ $ node main.js
 
 Edit ```colors.js``` if you want to use different colors. If a pixel in any of the images is black (```#000000```), it is currently automatically made transparent (for clarity purposes). The average error of the network output is subtracted from the transparency of each pixel.
 
+## Applications
+
+None that I know of, just experimenting :)
+
 ## Examples
 
 The following images are inputs and outputs of a network which recognizes green (```#ff0000```) color.
@@ -41,3 +45,7 @@ Original image | Processed image
 Original image | Processed image
 :-------------:|:--------------:
 ![Original nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/nature.png) | ![Processed nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/nature-rgb.png)
+
+## Contribute
+
+Feel free to fork and submit pull requests.
