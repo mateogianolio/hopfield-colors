@@ -20,6 +20,10 @@ Original image | Processed image
 :-------------:|:--------------:
 ![Original circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum.png) | ![Processed circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/output/spectrum.png)
 
+Original image | Processed image
+:-------------:|:--------------:
 ![Original linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum-linear.png) | ![Processed linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/output/spectrum-linear.png)
 
+Original image | Processed image
+:-------------:|:--------------:
 ![Original nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/nature.png) | ![Processed nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/output/nature.png)
