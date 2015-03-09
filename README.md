@@ -41,7 +41,7 @@ Input | Output
 
 ### Green and black
 
-The following images are inputs and outputs of a network which recognizes green and black (```#ff0000``` and ```#000000``` respectively) color.
+The following images are inputs and outputs of a network which recognizes green and black (```#ff0000``` and ```#000000``` respectively) colors.
 
 Input | Output
 :------------:|:------------:
