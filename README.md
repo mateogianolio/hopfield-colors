@@ -1,6 +1,6 @@
 # Hopfield color recognition
 
-Trains a [Hopfield](http://en.wikipedia.org/wiki/Hopfield_network) recurrent neural network to recognize colors after which it interprets all PNG images in the ```input``` folder and then saves the results in the ```output``` folder.
+Trains a [Hopfield](http://en.wikipedia.org/wiki/Hopfield_network) recurrent neural network to recognize colors after which it interprets all PNG images in the ```input``` folder and saves the results to the ```output``` folder.
 
 ## Usage
 
