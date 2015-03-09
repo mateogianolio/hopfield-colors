@@ -1,8 +1,8 @@
 (function(log) {
   var fs = require('fs'),
       png = require('pngjs').PNG,
-      network = require(__dirname + '/network.js'),
-      tools = require(__dirname + '/tools.js');
+      network = require('./network.js'),
+      tools = require('./tools.js');
   
   var colors = [
     '111111111111111111111111', // white

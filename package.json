@@ -1,0 +1,25 @@
+{
+  "name": "hopfield-color-recognition",
+  "version": "1.0.0",
+  "description": "Trains a [Hopfield](http://en.wikipedia.org/wiki/Hopfield_network) recurrent neural network to recognize colors after which it interprets all PNG images in the ```input``` folder and saves the results to the ```output``` folder.",
+  "main": "main.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mateogianolio/hopfield-color-recognition"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mateogianolio/hopfield-color-recognition/issues"
+  },
+  "homepage": "https://github.com/mateogianolio/hopfield-color-recognition",
+  "dependencies": {
+    "pngjs": "^0.4.0",
+    "synaptic": "^0.1.6"
+  }
+}
