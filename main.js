@@ -41,13 +41,15 @@
         return;
       }
       
-      log('[' + (i + 1) + '] processing ' + file + '...');
+      log('[' + (i + 1) + '] processing ' + file + ' ...');
 
       fs.createReadStream(__dirname + '/input/' + file)
         .pipe(new png({
           filterType: 4
         }))
         .on('parsed', function() {
+          var distribution = {},
+              hash;
           for(y = 0; y < this.height; y++) {
             for(x = 0; x < this.width; x++) {
               index = (this.width * y + x) << 2;
@@ -70,15 +72,31 @@
               this.data[index + 1] = destination[1];
               this.data[index + 2] = destination[2];
               this.data[index + 3] = Math.round(255 * (1 - output.error));
+              
+              hash = output.pattern.join('');
+              if(!distribution[hash])
+                distribution[hash] = 0;
+              
+              distribution[hash]++;
             }
           }
+        
+          var length = 0;
+          for(var key in distribution)
+            length += distribution[key];
+        
+          for(var key in distribution)
+            distribution[key] /= length;
 
           this
             .pack()
             .pipe(
               fs.createWriteStream(__dirname + '/output/' + file)
                 .on('close', function(i) {
-                  log('[' + (i + 1) + '] done');
+                  log('[' + (i + 1) + '] ... done');
+                  log('[' + (i + 1) + '] network output distribution:');
+                  log(distribution);
+                  log();
                 }.bind(null, i))
             );
         });
