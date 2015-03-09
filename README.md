@@ -18,7 +18,7 @@ The transparency of each pixel is based on the uncertainty of the neural network
 ## Observations
 
 * When trained to recognize red, green, blue and black (```#ff0000```, ```#00ff00```, ```#0000ff``` and ```#000000``` respectively), the inverses cyan, yellow and magenta (```#00ffff```, ```#ff00ff``` and ```#ffff00``` respectively) emerge as solid states as noted in the 'Spurious patterns' section of the [Wikipedia article](http://en.wikipedia.org/wiki/Hopfield_network#Spurious_patterns).
-* Applying a network trained to recognize black and white (```#000000``` and ```#ffffff``` respectively) on a circular color spectrum produces fractal-like patterns.
+* Applying a network trained to recognize black and white (```#000000``` and ```#ffffff``` respectively) on a circular color spectrum produces fractal-like patterns. See [this comment on HN](https://news.ycombinator.com/item?id=9170821) for an explanation.
 
 ## Examples
 
