@@ -7,6 +7,7 @@ Trains a [Hopfield](http://en.wikipedia.org/wiki/Hopfield_network) recurrent neu
 Clone this repository and make sure the ```output``` folder exists before running
 
 ```bash
+$ npm install
 $ node main.js
 ```
 
