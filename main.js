@@ -5,8 +5,8 @@
       tools = require(__dirname + '/tools.js');
   
   var colors = [
-    '111111111111111111111111', // White
-    '000000000000000000000000' // Black
+    '111111111111111111111111', // white
+    '000000000000000000000000' // black
   ];
   
   colors = colors
@@ -35,8 +35,8 @@
         destination = [];
 
     files.forEach(function(file, i) {
-      // ignore dotfiles and only accept png
-      if(file[0] === '.' || file.split('.').pop() !== 'png') {
+      // only accept png
+      if(file.split('.').pop() !== 'png') {
         log('[' + (i + 1) + '] ignored ' + file);
         return;
       }
