@@ -33,6 +33,10 @@ Input | Output
 
 Input | Output
 :-------------:|:--------------:
+![Input circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum-bagel.png) | ![Output circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-bagel-bw.png)
+
+Input | Output
+:-------------:|:--------------:
 ![Input linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum-linear.png) | ![Output linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-linear-bw.png)
 
 Input | Output
