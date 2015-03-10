@@ -18,7 +18,7 @@ The transparency of each pixel is based on the uncertainty of the neural network
 ## Observations
 
 * When trained to recognize red, green, blue and black (```#ff0000```, ```#00ff00```, ```#0000ff``` and ```#000000``` respectively), the inverses cyan, yellow and magenta (```#00ffff```, ```#ff00ff``` and ```#ffff00``` respectively) emerge as solid states as noted in the 'Spurious patterns' section of the [Wikipedia article](http://en.wikipedia.org/wiki/Hopfield_network#Spurious_patterns).
-* Applying a network trained to recognize black and white (```#000000``` and ```#ffffff``` respectively) on a circular color spectrum produces fractal-like patterns. See [this comment on HN](https://news.ycombinator.com/item?id=9170821) for an explanation.
+* Applying a network trained to recognize black and white (```#000000``` and ```#ffffff``` respectively) on a circular color spectrum produces fractal-like patterns.
 
 ## Examples
 
@@ -31,13 +31,8 @@ The following images are inputs and outputs of a network which recognizes black 
 Input | Output
 :------------:|:------------:
 ![Input circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum.png) | ![Output circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-bw.png)
-
-Input | Output
-:------------:|:------------:
 ![Input linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum-linear.png) | ![Output linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-linear-bw.png)
-
-Input | Output
-:------------:|:------------:
+![Input canonical spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum-canonical.png) | ![Output canonical spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-canonical-bw.png)
 ![Input nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/nature.png) | ![Output nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/nature-bw.png)
 
 ### Green and black
@@ -47,13 +42,8 @@ The following images are inputs and outputs of a network which recognizes green 
 Input | Output
 :------------:|:------------:
 ![Input circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum.png) | ![Output circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-g.png)
-
-Input | Output
-:------------:|:------------:
 ![Input linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum-linear.png) | ![Output linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-linear-g.png)
-
-Input | Output
-:------------:|:------------:
+![Input canonical spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum-canonical.png) | ![Output canonical spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-canonical-g.png)
 ![Input nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/nature.png) | ![Output nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/nature-g.png)
 
 ## Red, green, blue and black
@@ -63,13 +53,8 @@ The following images are inputs and outputs of a network which recognizes red, g
 Input | Output
 :------------:|:------------:
 ![Input circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum.png) | ![Output circular spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-rgb.png)
-
-Input | Output
-:------------:|:------------:
 ![Input linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum-linear.png) | ![Output linear spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-linear-rgb.png)
-
-Input | Output
-:------------:|:------------:
+![Input canonical spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/spectrum-canonical.png) | ![Output canonical spectrum](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/spectrum-canonical-rgb.png)
 ![Input nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/input/nature.png) | ![Output nature image](https://raw.github.com/mateogianolio/hopfield-color-filter/master/examples/nature-rgb.png)
 
 ## Contribute
