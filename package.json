@@ -17,6 +17,7 @@
   "bugs": {
     "url": "https://github.com/mateogianolio/hopfield-color-recognition/issues"
   },
+  "author": "Mateo Gianolio",
   "homepage": "https://github.com/mateogianolio/hopfield-color-recognition",
   "dependencies": {
     "pngjs": "^0.4.0",
